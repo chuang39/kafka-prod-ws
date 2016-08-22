@@ -21,7 +21,7 @@ wss.on('connection', function connection(ws) {
   ws.on('message', function incoming(message) {
     var arr = message.split('\n');
     var i = 0;
-    var topic_name = 'khuang';
+    var topic_name = 'playable_events';
     var bid_id = '0';
     var messages = [];
     for (i = 0; i < arr.length; i++) {
